@@ -1,0 +1,25 @@
+#this is a server block 
+	server {
+		
+		listen 3000;
+		root C:\blogSPA;
+		server_name localhost;
+		
+	# to change the default 404 html to other html file	
+	
+		error_page  404              /my404.html;
+		
+		location = /my404.html {
+            root   C:\iceAndFire;
+        }
+		
+	# to change the default 500 html to other html file	
+	
+		error_page  500              /my500.html;
+		
+        location = /my500.html {
+            root   C:\iceAndFire;
+        }
+		
+		
+	}
